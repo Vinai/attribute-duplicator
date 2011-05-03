@@ -33,5 +33,5 @@ KNOWN BUGS:
 - None! :D
 
 If you have ideas for improvements or find bugs, please send them to vinai@netzarbeiter.com,
-with Netzarbeiter_AttributeCopy as part of the subject line.
+with Netzarbeiter_AttributeDuplicator as part of the subject line.
 
