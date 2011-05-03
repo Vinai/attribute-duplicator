@@ -1,0 +1,8 @@
+"Duplicate","Duplizieren"
+"Please enter the new attribute code\\n(only lowercase characters and underscores)","Bitte geben Sie den neuen Attribute-Code an\n\n(nur Kleinbuchstaben und Unterstriche)"
+"Invalid source attribute code ""%s""","Ungültiges Quell-Attribut: ""%s"""
+"Invalid target attribute code ""%s"" must be lower case","Der neue Attribut-Code ""%s"" darf nur aus Kleinbuchstaben bestehen"
+"Invalid target attribute code ""%s"" must contain only characters and underscores","Der neue Attribut-Code ""%s"" darf nur Buchstaben und Unterstriche enthalten"
+"Invalid target attribute code ""%s"" already exists","Es existiert bereits ein Attribut mit dem Code ""%s"""
+"Error creating attribute ""%s"" from ""%s""","Fehler beim Erstellen des Attributes ""%s"" auf Basis von ""%s"""
+"New attribute ""%s"" with ID %d successfully created from ""%s""","Das neue Attribut ""%s"" mit der ID %d auf Basis von ""%s"" wurde erfolgreich angelegt"

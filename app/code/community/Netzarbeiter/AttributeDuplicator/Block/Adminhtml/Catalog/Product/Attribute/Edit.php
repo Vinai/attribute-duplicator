@@ -12,12 +12,12 @@
  * obtain it through the world-wide-web, please send an email
  * to license@magentocommerce.com so we can send you a copy immediately.
  *
- * package    Netzarbeiter_AttributeCopy
+ * package    Netzarbeiter_Duplicator
  * copyright  Copyright (c) 2011 Vinai Kopp http://netzarbeiter.com/
  * license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
-class Netzarbeiter_AttributeCopy_Block_Adminhtml_Catalog_Product_Attribute_Edit
+class Netzarbeiter_AttributeDuplicator_Block_Adminhtml_Catalog_Product_Attribute_Edit
 	extends Mage_Adminhtml_Block_Catalog_Product_Attribute_Edit
 {
 	public function __construct()
