@@ -78,7 +78,7 @@ class Netzarbeiter_AttributeCopy_Model_Product_Attribute_Copy
 
 		if (! preg_match('/^[a-z][a-z0-9_]+$/', $targetAttributeCode))
 		{
-			Mage::throwException($helper->__('Invalid target attribute code "%s" must cotain only characters and underscores', $targetAttributeCode));
+			Mage::throwException($helper->__('Invalid target attribute code "%s" must contain only characters and underscores', $targetAttributeCode));
 		}
 
 		$target = Mage::getSingleton('eav/config')->getAttribute($this->_entityType, $targetAttributeCode);
