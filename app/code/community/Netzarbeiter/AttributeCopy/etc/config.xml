@@ -43,6 +43,17 @@
 			</attributecopy>
 		</helpers>
 	</global>
+	<adminhtml>
+		<translate>
+			<modules>
+				<Netzarbeiter_AttributeCopy>
+					<files>
+						<default>Netzarbeiter_AttributeCopy.csv</default>
+					</files>
+				</Netzarbeiter_AttributeCopy>
+			</modules>
+		</translate>
+	</adminhtml>
 	<admin>
 		<routers>
 			<adminhtml>

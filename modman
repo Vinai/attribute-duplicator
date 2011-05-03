@@ -4,3 +4,5 @@
 
 app/etc/modules/Netzarbeiter_AttributeCopy.xml app/etc/modules/Netzarbeiter_AttributeCopy.xml
 app/code/community/Netzarbeiter/AttributeCopy app/code/community/Netzarbeiter/AttributeCopy
+
+app/locale/de_DE/Netzarbeiter_AttributeCopy.csv app/locale/de_DE/Netzarbeiter_AttributeCopy.csv
