@@ -19,6 +19,11 @@
  */
 -->
 <config>
+	<modules>
+		<Netzarbeiter_AttributeCopy>
+			<version>0.1.1</version>
+		</Netzarbeiter_AttributeCopy>
+	</modules>
 	<global>
 		<blocks>
 			<adminhtml>
