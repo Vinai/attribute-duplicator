@@ -3,7 +3,7 @@
     "type":"magento-module",
     "license":"OSL-3.0",
     "homepage":"https://github.com/Vinai/attribute-duplicator",
-    "description":"Magento Extenson which eanbles you to duplicate product attributes.",
+    "description":"Magento extenson which eanbles you to duplicate product attributes.",
     "authors":[
         {
             "name":"Vinai Kopp",

@@ -1,6 +1,6 @@
 Product Attribute Duplicator
 ============================
-Magento Extenson which eanbles you to duplicate product attributes.
+Magento extenson which eanbles you to duplicate product attributes.
 This is mainly usefull as a timesaver when creating similiar attributes with many options.
 
 Facts
