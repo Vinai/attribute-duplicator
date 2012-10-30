@@ -1,37 +1,51 @@
-/**
- * Magento
- *
- * NOTICE OF LICENSE
- *
- * This source file is subject to the Open Software License (OSL 3.0)
- * that is bundled with this package in the file LICENSE.txt.
- * It is also available through the world-wide-web at this URL:
- * http://opensource.org/licenses/osl-3.0.php
- * If you did not receive a copy of the license and are unable to
- * obtain it through the world-wide-web, please send an email
- * to license@magentocommerce.com so we can send you a copy immediately.
- *
- * package    Netzarbeiter_AttributeDuplicator
- * copyright  Copyright (c) 2011 Vinai Kopp http://netzarbeiter.com/
- * license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
- */
+Product Attribute Duplicator
+============================
+Magento Extenson which eanbles you to duplicate product attributes.
+This is mainly usefull as a timesaver when creating similiar attributes with many options.
 
-ABOUT
+Facts
+-----
+- version: check the [config.xml](https://github.com/Vinai/attribute-duplicator/blob/master/app/code/community/Netzarbeiter/AttributeDuplicator/etc/config.xml)
+- extension key: Netzarbeiter_AttributeDuplicator
+- [extension on Magento Connect](http://www.magentocommerce.com/magento-connect/attribute-duplicator.html)
+- Magento Connect 1.0 extension key: magento-community/Netzarbeiter_AttributeDuplicator
+- Magento Connect 2.0 extension key: http://connect20.magentocommerce.com/community/Netzarbeiter_AttributeDuplicator
+- [extension on GitHub](https://github.com/Vinai/attribute-duplicator)
+- [direct download link](https://github.com/Vinai/attribute-duplicator/zipball/master)
 
-This small extension eanbles you to duplicate product attributes. This is mainly
-usefull as a timesaver when creating similiar attributes with many options.
+Description
+-----------
+Navigate to Catalog - Attributes - Manage Attributes in the Admin Interface.
+Then select the source attribute, and click the "Duplicate" Button at the top right of the page.
 
+Compatibility
+-------------
+- Magento >= 1.4
 
-USAGE
+Installation Instructions
+-------------------------
+1. Install the extension via Magento Connect with the key shown above or copy all the files into your document root.
+2. Clear the cache, logout from the admin panel and then login again.
 
-Navigate to Catalog > Attributes > Manage Attributes in the Admin Interface.
-Then select the source attribute, and click the "Duplicate" Button at the top
-right of the page.
+Support
+-------
+If you have any issues with this extension, open an issue on GitHub (see URL above)
 
+Contribution
+------------
+Any contributions are highly appreciated. The best way to contribute code is to open a
+[pull request on GitHub](https://help.github.com/articles/using-pull-requests).
 
-KNOWN BUGS:
-- None! :D
+Developer
+---------
+Vinai Kopp
+[http://www.netzarbeiter.com](http://www.netzarbeiter.com)
+[@VinaiKopp](https://twitter.com/VinaiKopp)
 
-If you have ideas for improvements or find bugs, please send them to vinai@netzarbeiter.com,
-with Netzarbeiter_AttributeDuplicator as part of the subject line.
+Licence
+-------
+[OSL - Open Software Licence 3.0](http://opensource.org/licenses/osl-3.0.php)
 
+Copyright
+---------
+(c) 2012 Vinai Kopp
