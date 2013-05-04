@@ -19,55 +19,51 @@
 
 class Netzarbeiter_AttributeDuplicator_Adminhtml_AttributecopyController extends Mage_Adminhtml_Controller_Action
 {
-	public function copyAction()
-	{
-		try
-		{
-			if ($id = $this->_processCopy())
-			{
-				$this->_redirect('adminhtml/catalog_product_attribute/edit', array('attribute_id' => $id));
-				return;
-			}
-		}
-		catch (Exception $e)
-		{
-			Mage::logException($e);
-			Mage::getSingleton('adminhtml/session')->addError($e->getMessage());
-		}
-		$this->_redirectReferer();
-	}
+    public function copyAction()
+    {
+        try {
+            if ($attrId = $this->_processCopy()) {
+                $this->_redirect('adminhtml/catalog_product_attribute/edit', array('attribute_id' => $attrId));
+                return;
+            }
+        } catch (Exception $e) {
+            Mage::logException($e);
+            Mage::getSingleton('adminhtml/session')->addError($e->getMessage());
+        }
+        $this->_redirectReferer();
+    }
 
-	/**
-	 *
-	 * @return <type> 
-	 */
-	protected function _processCopy()
-	{
-		$origCode = $this->getRequest()->getParam('attribute', '');
-		$newCode = $this->getRequest()->getParam('new', '');
+    /**
+     * @return int
+     */
+    protected function _processCopy()
+    {
+        $origCode = $this->getRequest()->getParam('attribute', '');
+        $newCode = $this->getRequest()->getParam('new', '');
 
-		$model = Mage::getModel('attributecopy/product_attribute_copy');
-		$newAttribute = $model->copy($origCode, $newCode);
+        $model = Mage::getModel('attributecopy/product_attribute_copy');
+        $newAttribute = $model->copy($origCode, $newCode);
 
-		if (! $newAttribute->getId())
-		{
-			Mage::throwException($this->__('Error creating attribute "%s" from "%s"', $newCode, $origCode));
-		}
-		
-		Mage::getSingleton('adminhtml/session')->addSuccess(
-			$this->__('New attribute "%s" with ID %d successfully created from "%s"', $newCode, $newAttribute->getId(), $origCode)
-		);
-		return $newAttribute->getId();
+        if (!$newAttribute->getId()) {
+            Mage::throwException($this->__('Error creating attribute "%s" from "%s"', $newCode, $origCode));
+        }
 
-	}
+        Mage::getSingleton('adminhtml/session')->addSuccess(
+            $this->__('New attribute "%s" with ID %d successfully created from "%s"',
+                $newCode, $newAttribute->getId(), $origCode
+            )
+        );
+        return $newAttribute->getId();
 
-	/**
-	 * Attach into the attribute management acl node
-	 *
-	 * @return bool
-	 */
-	protected function _isAllowed()
-	{
-		return Mage::getSingleton('admin/session')->isAllowed('catalog/attributes/attributes');
-	}
+    }
+
+    /**
+     * Attach into the attribute management acl node
+     *
+     * @return bool
+     */
+    protected function _isAllowed()
+    {
+        return Mage::getSingleton('admin/session')->isAllowed('catalog/attributes/attributes');
+    }
 }

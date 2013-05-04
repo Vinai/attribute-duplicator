@@ -18,26 +18,25 @@
  */
 
 class Netzarbeiter_AttributeDuplicator_Block_Adminhtml_Catalog_Product_Attribute_Edit
-	extends Mage_Adminhtml_Block_Catalog_Product_Attribute_Edit
+    extends Mage_Adminhtml_Block_Catalog_Product_Attribute_Edit
 {
-	public function __construct()
-	{
-		$this->setModuleName('Mage_Adminhtml');
-		parent::__construct();
-		$attribute = Mage::registry('entity_attribute');
-		if ($attribute && $attribute->getId())
-		{
-			$this->_addButton(
-				'attributecopy',
-				array(
-					'label'     => Mage::helper('attributecopy')->__('Duplicate'),
-					'onclick'   => 'attributeCopy()',
-					'class'     => 'add'
-				),
-				10
-			);
+    public function __construct()
+    {
+        $this->setModuleName('Mage_Adminhtml');
+        parent::__construct();
+        $attribute = Mage::registry('entity_attribute');
+        if ($attribute && $attribute->getId()) {
+            $this->_addButton(
+                'attributecopy',
+                array(
+                    'label' => Mage::helper('attributecopy')->__('Duplicate'),
+                    'onclick' => 'attributeCopy()',
+                    'class' => 'add'
+                ),
+                10
+            );
 
-			$this->_formScripts[] = "
+            $this->_formScripts[] = "
 function attributeCopy() {
 	var newCode = '';
 	var newLabel = '';
@@ -47,18 +46,22 @@ function attributeCopy() {
 	}
 }
 ";
-		}
-	}
+        }
+    }
 
-	protected function _getPromptNewCodeText()
-	{
-		return Mage::helper('attributecopy')->__("Please enter the new attribute code\\n(only lowercase characters and underscores)");
-	}
+    protected function _getPromptNewCodeText()
+    {
+        return Mage::helper('attributecopy')->__(
+            "Please enter the new attribute code\\n(only lowercase characters and underscores)"
+        );
+    }
 
-	protected function _getRenameActionUrl()
-	{
-		$url = Mage::helper('adminhtml')->getUrl('adminhtml/attributecopy/copy');
-		if (substr($url, -1) != '/') $url .= '/';
-		return $url;
-	}
+    protected function _getRenameActionUrl()
+    {
+        $url = Mage::helper('adminhtml')->getUrl('adminhtml/attributecopy/copy');
+        if (substr($url, -1) != '/') {
+            $url .= '/';
+        }
+        return $url;
+    }
 }
