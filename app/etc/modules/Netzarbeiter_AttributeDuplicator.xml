@@ -19,14 +19,14 @@
  */
 -->
 <config>
-	<modules>
-		<Netzarbeiter_AttributeDuplicator>
-			<active>true</active>
-			<codePool>community</codePool>
-			<depends>
-				<Mage_Catalog/>
-				<Mage_Adminhtml/>
-			</depends>
-		</Netzarbeiter_AttributeDuplicator>
-	</modules>
+    <modules>
+        <Netzarbeiter_AttributeDuplicator>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Mage_Catalog/>
+                <Mage_Adminhtml/>
+            </depends>
+        </Netzarbeiter_AttributeDuplicator>
+    </modules>
 </config>
