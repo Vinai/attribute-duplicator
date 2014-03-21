@@ -48,4 +48,4 @@ Licence
 
 Copyright
 ---------
-(c) 2012 Vinai Kopp
+(c) 2014 Vinai Kopp
