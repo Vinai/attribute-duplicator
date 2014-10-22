@@ -7,9 +7,9 @@ Facts
 -----
 - version: check the [config.xml](https://github.com/Vinai/attribute-duplicator/blob/master/app/code/community/Netzarbeiter/AttributeDuplicator/etc/config.xml)
 - extension key: Netzarbeiter_AttributeDuplicator
-- [extension on Magento Connect](http://www.magentocommerce.com/magento-connect/attribute-duplicator.html)
-- Magento Connect 1.0 extension key: magento-community/Netzarbeiter_AttributeDuplicator
-- Magento Connect 2.0 extension key: http://connect20.magentocommerce.com/community/Netzarbeiter_AttributeDuplicator
+- extension on Magento Connect: -
+- Magento Connect 1.0 extension key: -
+- Magento Connect 2.0 extension key: -
 - [extension on GitHub](https://github.com/Vinai/attribute-duplicator)
 - [direct download link](https://github.com/Vinai/attribute-duplicator/zipball/master)
 
@@ -24,7 +24,7 @@ Compatibility
 
 Installation Instructions
 -------------------------
-1. Install the extension via Magento Connect with the key shown above or copy all the files into your document root.
+1. Install the extension by copying all the files from this repository into the appropriate folders.
 2. Clear the cache, logout from the admin panel and then login again.
 
 Support
